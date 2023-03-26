@@ -44,6 +44,25 @@
         console.log('Service Worker is not supported by browser.');
       }
     </script>
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+    
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: '%REACT_APP_APIKEY%',
+        authDomain: "%REACT_APP_AUTHDOMAIN%",
+        projectId: "%REACT_APP_PROJECTID%",
+        storageBucket: "%REACT_APP_STORAGEBUCKET%",
+        messagingSenderId: "%REACT_APP_MESSAGINGSENDERID%",
+        appId: "%REACT_APP_APPID%"
+      };
+    
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+    </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
